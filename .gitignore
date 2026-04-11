@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# OS
+.DS_Store
+
+# App outputs
+output*.jpg
+output*.png
+cropped*.jpg
+bgremoved*.png
+
+# Models
+.u2net/
+
