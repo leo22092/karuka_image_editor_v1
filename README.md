@@ -33,7 +33,7 @@ karuka_image_editor_basic/
 🛠️ Build (for developers)
 git clone https://github.com/leo22092/karuka_image_editor_v1
 cd karuka_image_editor_v1
-./build_appimage.sh
+bash -x build_appimage.sh --fresh       
 
 
 📸 Screenshots
