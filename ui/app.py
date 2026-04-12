@@ -9,7 +9,7 @@ from core.rotate import rotate_image
 class ImageEditorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Image Editor")
+        self.root.title("Karuka Image Editor Basic")
 
         self.image_path = None
 

@@ -1,4 +1,34 @@
-# Python
+# 🔹 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔹 Virtual Environment
+venv/
+.env/
+.envrc/
+
+# 🔹 Build / AppImage
+AppDir/
+*.AppImage
+squashfs-root/
+
+# 🔹 System files
+.DS_Store
+Thumbs.db
+
+# 🔹 Logs / temp
+*.log
+*.tmp
+*.cache
+
+# 🔹 IDE / Editor
+.vscode/
+.idea/
+
+# 🔹 Linux junk
+*~# Python
 __pycache__/
 *.pyc
 
