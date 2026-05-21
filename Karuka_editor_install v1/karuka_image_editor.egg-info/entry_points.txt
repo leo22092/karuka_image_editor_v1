@@ -1,0 +1,2 @@
+[console_scripts]
+karuka-editor = main:main
