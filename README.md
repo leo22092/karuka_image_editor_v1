@@ -11,6 +11,10 @@ Karuka Image Editor is a small Python desktop app for common image editing tasks
 - remove backgrounds with the optional `rembg` extra
 - save edited output to the user's Downloads folder
 
+## Screenshot
+
+![Karuka Image Editor screenshot](karuka_screenshot.png)
+
 ## Requirements
 
 - Python 3.10 or newer
