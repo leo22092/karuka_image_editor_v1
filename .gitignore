@@ -1,0 +1,37 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build and packaging outputs
+build/
+dist/
+*.egg-info/
+
+# Test and coverage outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# App outputs and local sample images
+output*.jpg
+output*.png
+cropped*.jpg
+rotated*.jpg
+bgremoved*.png
+a.jpg
+a_resized.jpg
+
+# Background removal model cache
+.u2net/

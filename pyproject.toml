@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "karuka-image-editor"
+version = "0.1.0"
+description = "A small Tkinter desktop image editor for resizing, cropping, rotating, converting, and removing backgrounds."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "leo22092", email = "tkm22092@gmail.com" }
+]
+maintainers = [
+  { name = "leo22092", email = "tkm22092@gmail.com" }
+]
+keywords = ["image-editor", "tkinter", "pillow", "resize", "crop", "batch-resize", "heic", "background-removal"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: X11 Applications",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
+dependencies = [
+  "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+bgremove = [
+  "rembg>=2.0.0",
+]
+heic = [
+  "pillow-heif>=0.16.0",
+]
+all = [
+  "rembg>=2.0.0",
+  "pillow-heif>=0.16.0",
+]
+dev = [
+  "build>=1.2.0",
+  "twine>=5.0.0",
+]
+
+[project.scripts]
+karuka-editor = "main:main"
+
+[project.urls]
+Homepage = "https://github.com/leo22092/karuka_image_editor_v1"
+Issues = "https://github.com/leo22092/karuka_image_editor_v1/issues"
+Source = "https://github.com/leo22092/karuka_image_editor_v1"
+
+[tool.setuptools]
+py-modules = ["main", "rotate"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core", "core.*", "ui", "ui.*", "utils", "utils.*", "misc", "misc.*"]
+exclude = ["__pycache__*", "tests*"]
