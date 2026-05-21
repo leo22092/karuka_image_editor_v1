@@ -1,5 +1,6 @@
 from PIL import Image
 import os
+from pathlib import Path
 
 def resize_exact(img, target_w, target_h):
     original_w, original_h = img.size
@@ -25,6 +26,9 @@ def resize_with_constraints(input_path, output_path, max_width, max_height, targ
         img = resize_exact(img, max_width, max_height)
     else:
         img.thumbnail((max_width, max_height), Image.LANCZOS)
+
+    if Path(output_path).suffix.lower() in [".jpg", ".jpeg"] and img.mode != "RGB":
+        img = img.convert("RGB")
 
     low, high = 10, 95
     best_quality = low

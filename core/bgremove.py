@@ -1,7 +1,8 @@
-from rembg import remove
 from PIL import Image
 
 def remove_bg_ai(input_path, output_path):
+    from rembg import remove
+
     with open(input_path, 'rb') as i:
         input_data = i.read()
 
